@@ -16,7 +16,6 @@ body {
   background-image: url("../images/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
- 
 }
 
 .wrapper {
@@ -38,10 +37,6 @@ body {
   padding: 0 30px;
 }
 
-
-
-
-
 .button {
   align-items: center;
   padding: 16px 32px;
@@ -51,13 +46,12 @@ body {
   border-radius: 28px;
   font-size: 16px;
   text-transform: capitalize;
-  
 }
 
 .tabs__nav button.active,
 .button-tab:active,
 .button-tab:hover,
-a:hover{
+a:hover {
   transition: color 0.5s ease;
 }
 
@@ -71,7 +65,7 @@ a:hover{
 .article:hover,
 .button__color:hover,
 .button:hover,
-.button:active{ 
+.button:active {
   transition: background-color 0.5s ease-in-out;
 }
 
@@ -90,15 +84,19 @@ a:hover{
 .button:active {
   @extend %hover;
   color: var(--text-color);
+  cursor: url("../images/hoverjpg.jpg"), pointer;
 }
 
 .tabs__nav button.active,
 .button-tab:active,
 .button-tab:hover,
+.menu__list-link:hover,
+.active .deploy__subtitle,
+.deploy__subtitle:hover ,
 a:hover {
   color: var(--hover-text);
+    cursor: url('../images/hero\ section.svg'), pointer;
 }
-
 
 .button__color {
   display: flex;
@@ -173,6 +171,6 @@ a:hover {
   display: none !important;
 }
 
-p{
+p {
   @extend %p-font;
 }

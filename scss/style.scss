@@ -29,9 +29,6 @@
   &__list-link {
     transition: color 0.3s ease-in-out;
   }
-  &__list-link:hover {
-    color: var(--hover-text);
-  }
 }
 
 .get-in-touch {
@@ -273,14 +270,13 @@
   &__element-img:hover {
     color: var(--text-color);
   }
-}
-
-.scrolling__element-img {
-  display: flex;
-  padding: 24px 16px;
-  gap: 16px;
-  width: 696px;
-  height: 503px;
+  &__element-img {
+    display: flex;
+    padding: 24px 16px;
+    gap: 16px;
+    width: 696px;
+    height: 503px;
+  }
 }
 
 .button__scrol-black {
@@ -303,15 +299,15 @@
 
 // Section Vector
 
-.vector__img{
+.vector__img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
 }
 
 // Section Service
+
 .service {
   padding: 80px 0;
 }
@@ -359,12 +355,8 @@
     padding-bottom: 16px;
   }
 }
-.active .deploy__subtitle,
-.deploy__subtitle:hover {
-  color: var(--hover-text);
-}
 
-// About
+//Section About
 
 .about {
   padding: 80px 0 44px;
@@ -529,27 +521,24 @@
   &__platform-text {
     padding-right: 8px;
   }
-}
-
-.client__estimation {
-  display: flex;
-  gap: 8px;
-  @extend %p-font;
-}
-
-.client__text {
-  font-size: 24px;
-  line-height: 160%;
-  padding-top: 28px;
-}
-.client__name {
-  @extend %p-font;
-  padding-top: 32px;
-}
-
-.client__awards {
-  display: flex;
-  gap: 32px;
+  &__estimation {
+    display: flex;
+    gap: 8px;
+    @extend %p-font;
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 160%;
+    padding-top: 28px;
+  }
+  &__name {
+    @extend %p-font;
+    padding-top: 32px;
+  }
+  &__awards {
+    display: flex;
+    gap: 32px;
+  }
 }
 
 // Blog
@@ -577,24 +566,25 @@
   height: 430px;
   overflow: hidden;
 }
-.article__img {
-  width: 100%;
-  height: 100%;
-}
-
-.article__img-first {
-  background-image: url("../images/section-home/blog_article1.png");
-}
-.article__text {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 160%;
-}
-.article__img-second {
-  background-image: url("../images/section-home/blog_article2.png");
-}
-.article__img-third {
-  background-image: url("../images/section-home/blog_article3.png");
+.article {
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+  &__img-first {
+    background-image: url("../images/section-home/blog_article1.png");
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 160%;
+  }
+  &_img-second {
+    background-image: url("../images/section-home/blog_article2.png");
+  }
+  &_img-third {
+    background-image: url("../images/section-home/blog_article3.png");
+  }
 }
 
 // Page ABOUT
@@ -856,65 +846,67 @@
   }
 }
 
-.tab__top {
-  width: 645px;
+.tab {
+  &__top {
+    width: 645px;
+  }
+  &__middle {
+    display: flex;
+    gap: 32px;
+    padding: 72px 0 120px;
+    justify-content: space-between;
+  }
+  &__middle-block {
+    width: 280px;
+  }
+  &__middle-block p {
+    padding-bottom: 8px;
+  }
+  &__middle-text {
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--p-color);
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+  }
+  &__bottom {
+    display: flex;
+    gap: 32px;
+  }
+  &__bottom-title {
+    @extend %subtitle-font;
+  }
+  &__bottom-item {
+    width: 384px;
+    height: 430px;
+  }
+  &__bottom-img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    margin-bottom: 32px;
+  }
+  &__img-one {
+    background-image: url("../images/sectin-services/img1.png");
+  }
+  &__img-two {
+    background-image: url("../images/sectin-services/img2.png");
+  }
+  &__img-three {
+    background-image: url("../images/sectin-services/img3.png");
+  }
+  &__bottom-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--p-color);
+  }
+  &__item.active {
+    display: block;
+  }
 }
 
-.tab__middle {
-  display: flex;
-  gap: 32px;
-  padding: 72px 0 120px;
-  justify-content: space-between;
-}
-.tab__middle-block {
-  width: 280px;
-}
-.tab__middle-block p {
-  padding-bottom: 8px;
-}
-.tab__middle-text {
-  font-size: 24px;
-  line-height: 160%;
-  color: var(--p-color);
-  border-top: 1px solid #ffffff;
-  padding-top: 20px;
-}
-.tab__bottom {
-  display: flex;
-  gap: 32px;
-}
-.tab__bottom-title {
-  @extend %subtitle-font;
-}
-
-.tab__bottom-item {
-  width: 384px;
-  height: 430px;
-}
-.tab__bottom-img {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  object-fit: contain;
-  margin-bottom: 32px;
-}
-
-.tab__img-one {
-  background-image: url("../images/sectin-services/img1.png");
-}
-.tab__img-two {
-  background-image: url("../images/sectin-services/img2.png");
-}
-
-.tab__img-three {
-  background-image: url("../images/sectin-services/img3.png");
-}
-.tab__bottom-text {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 160%;
-  color: var(--p-color);
-}
 .tab-carousel {
   overflow: hidden;
 }
@@ -925,26 +917,25 @@
   flex-wrap: nowrap;
   white-space: nowrap;
 }
-.tab__item.active {
-  display: block;
+
+// ----- Page BLOG -----
+
+.section {
+  &__blog {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 87px;
+  }
+  &__blog-title {
+    font-family: "Machérie";
+    font-size: 80px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
 }
 
-
-// Page BLOG
-
-.section__blog {
-  display: flex;
-  flex-direction: row;
-  align-items: end;
-  gap: 87px;
-}
-.section__blog-title {
-  font-family: "Machérie";
-  font-size: 80px;
-  line-height: 140%;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
 .motto__block-text {
   padding-bottom: 23px;
 }
@@ -1005,7 +996,7 @@
   }
 }
 
-// Page CONTACT
+//----- Page CONTACT -----
 
 .section__contact-title {
   display: flex;
@@ -1086,7 +1077,6 @@
   }
 }
 
-
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -1097,7 +1087,7 @@ input[type="password"] {
   &__block {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 137px;
   }
@@ -1129,4 +1119,9 @@ input[type="password"] {
   &__item-bottom {
     padding-top: 80px;
   }
+}
+
+a:hover {
+  color: var(--hover-text);
+  cursor: url("../images/hoverjpg.jpg"), pointer;
 }

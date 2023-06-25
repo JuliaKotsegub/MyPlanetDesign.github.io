@@ -205,13 +205,18 @@ a:hover {
 .button:hover,
 .button:active {
   color: var(--text-color);
+  cursor: url("../images/hoverjpg.jpg"), pointer;
 }
 
 .tabs__nav button.active,
 .button-tab:active,
 .button-tab:hover,
+.menu__list-link:hover,
+.active .deploy__subtitle,
+.deploy__subtitle:hover,
 a:hover {
   color: var(--hover-text);
+  cursor: url("../images/hero section.svg"), pointer;
 }
 
 .button__color {
@@ -382,9 +387,6 @@ a:hover {
 }
 .menu__list-link {
   transition: color 0.3s ease-in-out;
-}
-.menu__list-link:hover {
-  color: var(--hover-text);
 }
 
 .get-in-touch {
@@ -602,7 +604,6 @@ a:hover {
 .scrolling__element-img:hover {
   color: var(--text-color);
 }
-
 .scrolling__element-img {
   display: flex;
   padding: 24px 16px;
@@ -678,11 +679,6 @@ a:hover {
 .service .deploy__info-li {
   list-style-type: disc;
   padding-bottom: 16px;
-}
-
-.active .deploy__subtitle,
-.deploy__subtitle:hover {
-  color: var(--hover-text);
 }
 
 .about {
@@ -825,22 +821,18 @@ a:hover {
 .client__platform-text {
   padding-right: 8px;
 }
-
 .client__estimation {
   display: flex;
   gap: 8px;
 }
-
 .client__text {
   font-size: 24px;
   line-height: 160%;
   padding-top: 28px;
 }
-
 .client__name {
   padding-top: 32px;
 }
-
 .client__awards {
   display: flex;
   gap: 32px;
@@ -874,22 +866,18 @@ a:hover {
   width: 100%;
   height: 100%;
 }
-
 .article__img-first {
   background-image: url("../images/section-home/blog_article1.png");
 }
-
 .article__text {
   font-weight: 500;
   font-size: 24px;
   line-height: 160%;
 }
-
-.article__img-second {
+.article_img-second {
   background-image: url("../images/section-home/blog_article2.png");
 }
-
-.article__img-third {
+.article_img-third {
   background-image: url("../images/section-home/blog_article3.png");
 }
 
@@ -1128,22 +1116,18 @@ a:hover {
 .tab__top {
   width: 645px;
 }
-
 .tab__middle {
   display: flex;
   gap: 32px;
   padding: 72px 0 120px;
   justify-content: space-between;
 }
-
 .tab__middle-block {
   width: 280px;
 }
-
 .tab__middle-block p {
   padding-bottom: 8px;
 }
-
 .tab__middle-text {
   font-size: 24px;
   line-height: 160%;
@@ -1151,17 +1135,14 @@ a:hover {
   border-top: 1px solid #ffffff;
   padding-top: 20px;
 }
-
 .tab__bottom {
   display: flex;
   gap: 32px;
 }
-
 .tab__bottom-item {
   width: 384px;
   height: 430px;
 }
-
 .tab__bottom-img {
   width: 100%;
   height: 100%;
@@ -1170,24 +1151,23 @@ a:hover {
      object-fit: contain;
   margin-bottom: 32px;
 }
-
 .tab__img-one {
   background-image: url("../images/sectin-services/img1.png");
 }
-
 .tab__img-two {
   background-image: url("../images/sectin-services/img2.png");
 }
-
 .tab__img-three {
   background-image: url("../images/sectin-services/img3.png");
 }
-
 .tab__bottom-text {
   font-weight: 500;
   font-size: 24px;
   line-height: 160%;
   color: var(--p-color);
+}
+.tab__item.active {
+  display: block;
 }
 
 .tab-carousel {
@@ -1201,17 +1181,12 @@ a:hover {
   white-space: nowrap;
 }
 
-.tab__item.active {
-  display: block;
-}
-
 .section__blog {
   display: flex;
   flex-direction: row;
   align-items: end;
   gap: 87px;
 }
-
 .section__blog-title {
   font-family: "Machérie";
   font-size: 80px;
@@ -1386,4 +1361,9 @@ a:hover {
 }
 .address__item-bottom {
   padding-top: 80px;
+}
+
+a:hover {
+  color: var(--hover-text);
+  cursor: url("../images/hoverjpg.jpg"), pointer;
 }/*# sourceMappingURL=style.css.map */
