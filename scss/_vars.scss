@@ -1,0 +1,45 @@
+%title-font {
+  font-family: "Machérie";
+  font-size: 72px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+%title-medium {
+  font-family: "Machérie";
+  font-size: 64px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+%subtitle-font {
+font-weight: 500;
+font-size: 48px;
+line-height: 130%;
+text-transform: capitalize;
+padding-bottom: 32px;
+}
+
+%p-font {
+  font-size: 18px;
+  line-height: 160%;
+  color: #d9dee0;
+}
+
+%purple-color {
+  color: #914efe;
+}
+
+%button {
+  display: flex;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 10px;
+  height: 48px;
+  border: 1px solid #914efe;
+  border-radius: 28px;
+}
+
+%hover{
+  background-color: var(--hover-text);
+}

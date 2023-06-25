@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=p, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="contact-bg">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="index.html" class="logo">
+            <img src="./images/header/logo.svg" alt="logo">
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="projects.html">projects</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="services.html">services</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="about.html">about</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="blog.html">blog</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="contact.html" class="get-in-touch button">Get in Touch</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrapper ">
+      <main class="main">
+        <section class="motto">
+          <div class="container">
+            <div class="motto__inner ">
+              <h2 class="big-title "> Contact us <span class="highlinght section__contact-title">Have a project?</span>
+              </h2>
+            </div>
+          </div>
+        </section>
+
+        <section class="form">
+          <div class="container">
+            <form class="contact__form">
+              <div class="form__inner">
+                <div class="form__left">
+                  <div class="form__left-btn">
+                    <button type="button" onclick="submitForm()" class="button__contact">design</button>
+                    <button type="button" onclick="submitForm()" class="button__contact">graphic design</button>
+                    <button type="button" onclick="submitForm()" class="button__contact">development</button>
+                    <button type="button" onclick="submitForm()" class="button__contact">motion</button>
+                    <button type="button" onclick="submitForm()" class="button__contact">marketing</button>
+                  </div>
+                  <input class="contact__form-input" placeholder="Name *" type="text" required>
+                  <input class="contact__form-input" placeholder="Email *" type="text" required>
+                  <input class="contact__form-input" placeholder="Phone *" type="text" required>
+                  <input class="contact__form-input" placeholder="Company" type="text">
+                  <textarea class="contact__form-area" placeholder="Message"></textarea>
+                </div>
+                <div class="form__right">
+                  <p class="form__right-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent
+                    per
+                    conubia nostra, per inceptos himenaeos.</p>
+                  <button class="contact__form-btn" type="submit">
+                    <div href="contact.html"  class="footer__title-gif">
+                      <img class="rotate-image" src="./images/footer/footer-rotate.png" alt="">
+                     <div class="center-image"> <img class="arrow-image" src="./images/footer/Arrow btn.svg" alt=""></div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="address">
+          <div class="inner">
+            <div class="address__block">
+              <div class="address__block-left"><img src="./images/Shape-contact.png" alt=""></div>
+              <div class="address__block-right">
+                <div class="container">
+                  <h3 class="title">contact</h3>
+                  <div class="address__item address__item-top ">
+                    <div class="address__item-subtitle"> Press &#38; Speaking</div>
+                    <p class="address__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                      vulputate</p>
+                    <a href="mailto:info@myplanetdesign.com"> <span class="address__text-mail"><span class="highlinght">
+                          Email us </span></span></a>
+                  </div>
+                  <div class="address__item">
+                    <div class="address__item-subtitle">let's talk</div>
+                    <p class="address__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                      vulputate libero et </p>
+                    <a class=".address__item-text" href="tel:+00 000 000 0000"><span class="highlinght"> +00 000 000
+                        0000</span> </a>
+                  </div>
+                  <div class="address__item address__item-bottom">
+                    <div class="address__item-subtitle">let's talk</div>
+                    <p class="address__item-text ">st. Stryiska 59a, 749066,
+                      Lviv, Ukraine </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <footer class="footer">
+          <div class="container">
+            <div class="inner">
+              <div class="container">
+                <div class="footer__inner">
+                  <ul class="footer__info ">
+                    <h6 class="footer__text-subtitle">Home</h6>
+                    <li class="footer__text"><a class="footer__text-link" href="projects.html"> Projects</a></li>
+                    <li class="footer__text"><a class="footer__text-link" href="services.html">Services</a></li>
+                    <li class="footer__text"><a class="footer__text-link" href="about.html">About Us</a></li>
+                    <li class="footer__text"><a class="footer__text-link" href="blog.html">Blog</a></li>
+                    <li class="footer__text"><a class="footer__text-link" href="contact.html">Get in Touch</a></li>
+                  </ul>
+                  <ul class="footer__info ">
+                    <h6 class="footer__text-subtitle">Experts in</h6>
+                    <li class="footer__text">Product</li>
+                    <li class="footer__text">Wed Development</li>
+                    <li class="footer__text">Motion Design</li>
+                    <li class="footer__text">Mob app Development</li>
+                    <li class="footer__text">Video Production</li>
+                  </ul>
+                  <ul class="footer__info-contact">
+                    <h6 class="footer__text-subtitle">General enquiries</h6>
+                    <li class="footer__text"> For general inquiries, please</li>
+                    <li class="footer__text">contact:<a href="mailto:info@myplanetdesign.com"> <span
+                          class="footer__text-mail">
+                          info@myplanetdesign.com </span></a></li>
+                    <li class="footer__text">st. Stryiska 59a, 749066,</li>
+                    <li class="footer__text">Lviv, Ukraine </li>
+                  </ul>
+                  <ul class="footer__info footer__info-social">
+                    <h6 class="footer__text-subtitle">Networks</h6>
+                    <li class="footer__text"><a class="footer__text-link" href="">Instagram </a> <img
+                        src="./images/footer/arrow.svg" alt="arrow"> </li>
+                    <li class="footer__text"><a class="footer__text-link" href="">Linkedin</a> <img
+                        src="./images/footer/arrow.svg" alt="arrow"></li>
+                    <li class="footer__text"><a class="footer__text-link" href="">Dribbble</a> <img
+                        src="./images/footer/arrow.svg" alt="arrow"></li>
+                    <li class="footer__text"><a class="footer__text-link" href="">Behance</a> <img
+                        src="./images/footer/arrow.svg" alt="arrow"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="container">
+                <div class="footer__copyright">© 2023 MyPlanet Design – ALL RIGHTS RESERVED.</div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/main.js"> </script>
+
+</body>
+
+</html>

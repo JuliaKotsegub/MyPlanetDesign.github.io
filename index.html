@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=p, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+</head>
+
+<body>
+  <div class="home-bg">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="index.html">
+            <img src="./images/header/logo.svg" alt="logo">
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="projects.html">projects</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="services.html">services</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="about.html">about</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="blog.html">blog</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="contact.html" class="get-in-touch button">Get in Touch</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <main class="main ">
+
+        <section class="motto ">
+          <div class="container">
+            <div class="motto__inner">
+              <div class="motto__title"> Non-Standard Solutions for Business Growth <br> and Success</div>
+              <div class="motto__text">MyPlanet is an innovative agency consisting of multidisciplinary experts. <br>
+                Our
+                specialty is design, development and marketing.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="show">
+          <div class="container">
+            <div class="show__inner">
+              <div class="show__inner-top">
+                <h3 class="show__title title">Show</h3>
+                <div class="box">
+                  <img class="box__img" src="./images/section-home/video.png" alt="video">
+                  <a class="box__video" data-fancybox href="https://youtu.be/XV55Qvgluws">
+                    <img class="box-play" src="./images/section-home/ic.svg" alt="play button"> </a>
+                </div>
+                <h3 class="show__title title">Real</h3>
+              </div>
+              <div class="show__inner-buttom">
+                <p>We collected our best works in one motion video. To better feel the emotions, put on your headphones
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project">
+          <div class="container">
+            <div class="project__inner inner">
+              <div class="center__element">
+                <h3 class="title">Case studies</h3>
+                <p class="center__element-text">Check out our wonderful cases to learn more about our experience </p>
+                <div> <a href="projects.html" class="button">view all projects</a></div>
+              </div>
+              <div class="scrolling__container">
+                <div class="scrolling__element">
+                  <div class="scrolling__element-list scrolling__element-one">
+                    <a class="scrolling__element-img">
+                      <div class="button__color">development</div>
+                      <div class="button__scrol-black">saas</div>
+                    </a>
+                  </div>
+                  <div class="scrolling__element-info">
+                    Modern Collaborative SQL Editor
+                  </div>
+                </div>
+                <div class="scrolling__element">
+                  <div class="scrolling__element-list scrolling__element-two">
+                    <a class="scrolling__element-img">
+                      <div class="button__color">redesign</div>
+                      <div class="button__scrol-black">estate</div>
+                    </a>
+                  </div>
+                  <div class="scrolling__element-info">
+                    Website design and branding for Federal
+                  </div>
+                </div>
+                <div class="scrolling__element">
+                  <div class="scrolling__element-list scrolling__element-three">
+                    <a class="scrolling__element-img">
+                      <div class="button__color">saas</div>
+                      <div class="button__scrol-black">traiding</div>
+                    </a>
+                  </div>
+                  <div class="scrolling__element-info">
+                    Website design and branding for Federal
+                  </div>
+                </div>
+                <div class="scrolling__element">
+                  <div class="scrolling__element-list scrolling__element-four">
+                    <a class="scrolling__element-img">
+                      <div class="button__color">mobile app</div>
+                      <div class="button__scrol-black">taxi</div>
+                    </a>
+                  </div>
+                  <div class="scrolling__element-info">
+                    Mobile application for calling a taxi
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="vector">
+          <div class="inner">
+            <div class="vector__img">
+              <img src="./images/section-home/Vector.png" alt="Digital Agence">
+              <img src="./images/section-home/Vector.png" alt="Digital Agence">
+            </div>
+          </div>
+        </section>
+
+        <section class="service">
+          <div class="container">
+            <h3 class="title">our services</h3>
+            <p class="service__text">We partner with you in every phase of the product life cycle to <br> ensure the
+              highest level of satisfaction for you and your users.</p>
+            <div class="service__inner">
+              <details class="service__deploy" onclick="this.classList.toggle('active')">
+                <summary class="service__deploy-name"> <span class="deploy__subtitle-number"> 01 </span>
+                  <h4 class="deploy__subtitle">UX/UI design</h4>
+                </summary>
+                <div class="deploy__info">
+                  <ul class="deploy__info-direction">
+                    <li class="deploy__info-li">Market Research</li>
+                    <li class="deploy__info-li">User Experience Design</li>
+                    <li class="deploy__info-li">User Interface Design</li>
+                  </ul>
+                  <div class="deploy__info-text">
+                    <p> With the help of UX/UI design, you can increase brand awareness, change the way you do business,
+                      gain the trust of customers, and help create an efficient and pleasant experience.
+                      <br> <br>
+                      At my planet, we will provide you with the highest standard of design to convert leads into
+                      customers and ensure they get the most value from your product.
+                    </p>
+                  </div>
+                </div>
+              </details>
+              <details class="service__deploy" onclick="this.classList.toggle('active')">
+                <summary class="service__deploy-name"> <span class="deploy__subtitle-number"> 02 </span>
+                  <h4 class="deploy__subtitle">Graphic design</h4>
+                </summary>
+                <div class="deploy__info">
+                  <ul class="deploy__info-direction">
+                    <li class="deploy__info-li">Market Research</li>
+                    <li class="deploy__info-li">User Experience Design</li>
+                    <li class="deploy__info-li">User Interface Design</li>
+                  </ul>
+                  <div class="deploy__info-text">
+                    <p> With the help of UX/UI design, you can increase brand awareness, change the way you do business,
+                      gain the trust of customers, and help create an efficient and pleasant experience.
+                      <br> <br>
+                      At my planet, we will provide you with the highest standard of design to convert leads into
+                      customers and ensure they get the most value from your product.
+                    </p>
+                  </div>
+                </div>
+              </details>
+              <details class="service__deploy" onclick="this.classList.toggle('active')">
+                <summary class="service__deploy-name"> <span class="deploy__subtitle-number"> 03 </span>
+                  <h4 class="deploy__subtitle">Marketing</h4>
+                </summary>
+                <div class="deploy__info">
+                  <ul class="deploy__info-direction">
+                    <li class="deploy__info-li">Market Research</li>
+                    <li class="deploy__info-li">User Experience Design</li>
+                    <li class="deploy__info-li">User Interface Design</li>
+                  </ul>
+                  <div class="deploy__info-text">
+                    <p> With the help of UX/UI design, you can increase brand awareness, change the way you do business,
+                      gain the trust of customers, and help create an efficient and pleasant experience.
+                      <br> <br>
+                      At my planet, we will provide you with the highest standard of design to convert leads into
+                      customers and ensure they get the most value from your product.
+                    </p>
+                  </div>
+                </div>
+              </details>
+              <details class="service__deploy" onclick="this.classList.toggle('active')">
+                <summary class="service__deploy-name"> <span class="deploy__subtitle-number"> 04</span>
+                  <h4 class="deploy__subtitle">Motion design</h4>
+                </summary>
+                <div class="deploy__info">
+                  <ul class="deploy__info-direction">
+                    <li class="deploy__info-li">Market Research</li>
+                    <li class="deploy__info-li">User Experience Design</li>
+                    <li class="deploy__info-li">User Interface Design</li>
+                  </ul>
+                  <div class="deploy__info-text">
+                    <p> With the help of UX/UI design, you can increase brand awareness, change the way you do business,
+                      gain the trust of customers, and help create an efficient and pleasant experience.
+                      <br> <br>
+                      At my planet, we will provide you with the highest standard of design to convert leads into
+                      customers and ensure they get the most value from your product.
+                    </p>
+                  </div>
+                </div>
+              </details>
+              <details class="service__deploy" onclick="this.classList.toggle('active')">
+                <summary class="service__deploy-name"> <span class="deploy__subtitle-number"> 05 </span>
+                  <h4 class="deploy__subtitle">Front-end and back-end</h4>
+                </summary>
+                <div class="deploy__info">
+                  <ul class="deploy__info-direction">
+                    <li class="deploy__info-li">Market Research</li>
+                    <li class="deploy__info-li">User Experience Design</li>
+                    <li class="deploy__info-li">User Interface Design</li>
+                  </ul>
+                  <div class="deploy__info-text">
+                    <p> With the help of UX/UI design, you can increase brand awareness, change the way you do business,
+                      gain the trust of customers, and help create an efficient and pleasant experience.
+                      <br> <br>
+                      At my planet, we will provide you with the highest standard of design to convert leads into
+                      customers and ensure they get the most value from your product.
+                    </p>
+                  </div>
+                </div>
+              </details>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="about">
+          <div class="container">
+            <h3 class="title"> About Us</h3>
+            <div class="about__inner">
+              <div class="about__right-flex">
+                <div class="about__right">
+                  <h6 class="about__right-subtitle"> Lorem ipsum <span class="highlinght">dolor sit </span> </h6>
+                  <p class="about__right-text">
+                    My Planet is an agency that combines design and development experts who will give a second lease of
+                    life
+                    to a business, helping it start the path to success. We help startups navigate the difficult journey
+                    of
+                    creating attractive designs that will engage users. We believe that good design is the key to the
+                    success of any business, and our mission is to rid the world of bad design solutions. We use only
+                    reliable and modern technologies, combining them with fresh ideas of our young and experienced team.
+                  </p>
+                </div>
+              </div>
+              <div class="about__left">
+                <div class="about__left-info">
+                  <h6 class="about__left-subtitle">Lorem ipsum</h6>
+                  <p class="about__left-text">
+                    We guarantee that the result is non-standard solutions that not only look great, but also bring
+                    profit
+                    to the business of our partners, and the products will remain in demand, relevant and competitive.
+                    Together, we're working to create a world where good design is the norm and business can thrive.
+                    Join
+                    us and let us help your business succeed.
+                  </p>
+                  <div class="about__left-button"> <a href="about.html" class="button">read about us</a></div>
+                </div>
+                <div class="about__left-statistic">
+                  <div class="about__block">
+                    <div class="about__block-number">+45</div>
+                    <div class="about__block-information"> Successful projects </div>
+                  </div>
+                  <div class="about__block">
+                    <div class="about__block-number">99%</div>
+                    <div class="about__block-information">Satisfied customers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="team ">
+          <div class="container">
+            <div class="team__inner ">
+              <div class="team__slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="team__slider-item swiper-slide">
+                    <img class="team__slider-img" src="./images/section-home/slider1.png" alt="Team member">
+                    <h6 class="team__slider-title"> Nazar Verhun</h6>
+                    <p class="team__slider-text">UX/UI Designer, Founder</p>
+                  </div>
+                  <div class="team__slider-item swiper-slide">
+                    <img class="team__slider-img" src="./images/section-home/slider2.png" alt="Team member">
+                    <h6 class="team__slider-title">Dariy Pikh</h6>
+                    <p class="team__slider-text">Founder</p>
+                  </div>
+                  <div class="team__slider-item swiper-slide">
+                    <img class="team__slider-img" src="./images/section-home/slider3.png" alt="Team member">
+                    <h6 class="team__slider-title">Julia Kohaniuk</h6>
+                    <p class="team__slider-text">UI/UX Designer</p>
+                  </div>
+                  <div class="team__slider-item swiper-slide">
+                    <img class="team__slider-img" src="./images/section-home/slider4.png" alt="Team member">
+                    <h6 class="team__slider-title">Maksym okutin</h6>
+                    <p class="team__slider-text">UI/UX Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="reviews">
+          <div class="slider">
+            <div class="container">
+              <h3 class="title"> Trusted by <br>
+                Awersome Clients</h3>
+
+              <div class="carousel-container">
+                <div class="carousel-slide active slide1">
+                  <div class="client__platform-flex">
+                    <div class="client__platform"><img src="/images/section-home/reviews_logo_platform.svg"
+                        alt="Platform">
+                    </div>
+                    <p class="client__platform-text">5.0</p>
+                    <img src="./images/section-home/reviews_star.svg" alt="reviews">
+                  </div>
+                  <div class="client__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero
+                    et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad Lorem ipsum dolor sit
+                    amet,
+                    consectetur adipiscing elit. Nunc vulputate</div>
+                  <div class="client__name-flex">
+                    <li class="client__name">Artur Artur, Lorem ipsum dolor sit amet, consectetur</li>
+                    <div class="client__awards">
+                      <img src="./images/section-home/reviews reward1.png" alt="reward">
+                      <img src="./images/section-home/reviews reward2.png" alt="reward">
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-slide slide2">
+                  <div class="client__platform-flex">
+                    <div class="client__platform"><img src="/images/section-home/reviews_logo_platform.svg"
+                        alt="Platform">
+                    </div>
+                    <p class="client__platform-text">4.0</p>
+                    <img src="./images/section-home/reviews_star.svg" alt="reviews">
+                  </div>
+                  <div class="client__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero
+                    et velit interdum, ac aliquet odio mattis.</div>
+                  <div class="client__name-flex">
+                    <li class="client__name">Artur Artur, Lorem ipsum dolor sit amet, consectetur</li>
+                    <div class="client__awards">
+                      <img src="./images/section-home/reviews reward1.png" alt="reward">
+                      <img src="./images/section-home/reviews reward2.png" alt="reward">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="carousel-arrows">
+                  <div class="carousel-arrow prev"><img src="./images/section-home/Arrowleft.svg" alt="Previous Slide">
+                  </div>
+                  <div class="carousel-arrow next"><img src="./images/section-home/arrow-right.svg" alt="Next Slide">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="blog">
+          <div class="container">
+            <h3 class="title">our blog</h3>
+            <div class="blog__inner">
+              <div class="blog__inner-item">
+                <a href="blog.html" class="article__img ">
+                  <div class="article article__img-first">
+                    <div class="scrolling__element-img">
+                      <div class="button__color article__button">articles</div>
+                    </div>
+                  </div>
+                </a>
+                <div class="article__text">Lorem ipsum dolor sit amet</div>
+              </div>
+              <div class="blog__inner-item">
+                <a href="blog.html" class="article__img ">
+                  <div class="article article__img-second">
+                    <div class="scrolling__element-img">
+                      <div class="button__color article__button">articles</div>
+                    </div>
+                  </div>
+                </a>
+                <div class="article__text">Lorem ipsum dolor sit amet</div>
+              </div>
+              <div class="blog__inner-item">
+                <a href="blog.html" class="article__img ">
+                  <div class="article article__img-third">
+                    <div class="scrolling__element-img">
+                      <div class="button__color article__button">articles</div>
+                    </div>
+                  </div>
+                </a>
+                <div class="article__text">Lorem ipsum dolor sit amet</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="inner">
+            <div class="footer__title">
+              <h3 class="title"> How can
+                <br>
+                we help you ?
+              </h3>
+              <a href="contact.html" class="footer__title-gif">
+                <img class="rotate-image" src="./images/footer/footer-rotate.png" alt="">
+                <div class="center-image"> <img class="arrow-image" src="./images/footer/Arrow btn.svg" alt=""></div>
+              </a>
+            </div>
+            <div class="container">
+              <div class="footer__inner">
+                <ul class="footer__info ">
+                  <h6 class="footer__text-subtitle">Home</h6>
+                  <li class="footer__text"><a class="footer__text-link" href="projects.html"> Projects</a></li>
+                  <li class="footer__text"><a class="footer__text-link" href="services.html">Services</a></li>
+                  <li class="footer__text"><a class="footer__text-link" href="about.html">About Us</a></li>
+                  <li class="footer__text"><a class="footer__text-link" href="blog.html">Blog</a></li>
+                  <li class="footer__text"><a class="footer__text-link" href="contact.html">Get in Touch</a></li>
+                </ul>
+                <ul class="footer__info ">
+                  <h6 class="footer__text-subtitle">Experts in</h6>
+                  <li class="footer__text">Product</li>
+                  <li class="footer__text">Wed Development</li>
+                  <li class="footer__text">Motion Design</li>
+                  <li class="footer__text">Mob app Development</li>
+                  <li class="footer__text">Video Production</li>
+                </ul>
+                <ul class="footer__info-contact">
+                  <h6 class="footer__text-subtitle">General enquiries</h6>
+                  <li class="footer__text"> For general inquiries, please</li>
+                  <li class="footer__text">contact:<a href="mailto:info@myplanetdesign.com"> <span
+                        class="footer__text-mail">
+                        info@myplanetdesign.com </span></a></li>
+                  <li class="footer__text">st. Stryiska 59a, 749066,</li>
+                  <li class="footer__text">Lviv, Ukraine </li>
+                </ul>
+                <ul class="footer__info footer__info-social">
+                  <h6 class="footer__text-subtitle">Networks</h6>
+                  <li class="footer__text"><a class="footer__text-link" href="">Instagram </a> <img
+                      src="./images/footer/arrow.svg" alt="arrow"> </li>
+                  <li class="footer__text"><a class="footer__text-link" href="">Linkedin</a> <img
+                      src="./images/footer/arrow.svg" alt="arrow"></li>
+                  <li class="footer__text"><a class="footer__text-link" href="">Dribbble</a> <img
+                      src="./images/footer/arrow.svg" alt="arrow"></li>
+                  <li class="footer__text"><a class="footer__text-link" href="">Behance</a> <img
+                      src="./images/footer/arrow.svg" alt="arrow"></li>
+                </ul>
+              </div>
+              <div class="footer__copyright">© 2023 MyPlanet Design – ALL RIGHTS RESERVED.</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"> </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var slides = document.querySelectorAll('.carousel-slide');
+      var arrows = document.querySelectorAll('.carousel-arrow');
+      var currentSlide = 0;
+
+      function showSlide(index) {
+        slides.forEach(function (slide) {
+          slide.classList.remove('active');
+        });
+        slides[index].classList.add('active');
+      }
+
+      function prevSlide() {
+        currentSlide--;
+        if (currentSlide < 0) {
+          currentSlide = slides.length - 1;
+        }
+        showSlide(currentSlide);
+      }
+
+      function nextSlide() {
+        currentSlide++;
+        if (currentSlide >= slides.length) {
+          currentSlide = 0;
+        }
+        showSlide(currentSlide);
+      }
+
+      arrows.forEach(function (arrow) {
+        arrow.addEventListener('click', function () {
+          if (this.classList.contains('prev')) {
+            prevSlide();
+          } else if (this.classList.contains('next')) {
+            nextSlide();
+          }
+        });
+      });
+
+      showSlide(currentSlide);
+
+    });
+
+  </script>
+</body>
+
+</html>
