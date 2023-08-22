@@ -49,8 +49,8 @@ body {
 }
 
 .tabs__nav button.active,
-.button-tab:active,
-.button-tab:hover,
+.active-tab,
+.active-tab,
 a:hover {
   transition: color 0.5s ease;
 }
@@ -87,9 +87,9 @@ a:hover {
   cursor: url("../images/hoverjpg.jpg"), pointer;
 }
 
-.tabs__nav button.active,
-.button-tab:active,
-.button-tab:hover,
+.tabs__nav button.active ,
+.active-tab:active,
+.active-tab:hover,
 .menu__list-link:hover,
 .active .deploy__subtitle,
 .deploy__subtitle:hover ,

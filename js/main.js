@@ -1,23 +1,5 @@
 
 
-var swiper = new Swiper('.team__slider', {
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    spaceBetween: 10,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false
-    // },
-    on: {
-      slideChange: function() {
-        var activeSlide = this.slides[this.activeIndex];
-        activeSlide.classList.add('active');
-        setTimeout(function() {
-          activeSlide.classList.remove('active');
-        }, 3000);
-      }
-    }
-  });
 
 
  // TABS
@@ -196,8 +178,27 @@ document.addEventListener('DOMContentLoaded', function() {
     $('.carousel__inner').slick({
       infinite: true,
       slidesToShow: 3,
-      slidesToScroll: 3
-    });      
+      slidesToScroll: 3,
+      // Додайте подію 'setPosition' для слайдера
+    }).on('setPosition', function (event, slick) {
+      // Знаходимо всі елементи .team__slider-item у слайдері
+      var teamItems = $(this).find('.team__slider-item');
+    
+      // Отримуємо висоту слайдера
+      var sliderHeight = $(this).height();
+    
+      // Центруємо кожний .team__slider-item відносно висоти
+      teamItems.each(function() {
+        var $this = $(this);
+        var itemHeight = $this.height();
+        var marginTop = (sliderHeight - itemHeight) / 2;
+        $this.css('margin-top', marginTop + 'px');
+      });
+    });
+    
+    
+    
+   
 
 
     

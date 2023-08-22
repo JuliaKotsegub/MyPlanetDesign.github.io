@@ -80,9 +80,9 @@
           <div class="container">
             <div class="inner">
               <h3 class="title news__title">All News</h3>
-              <div class="grid__block-section">
+              <div class="grid__block-section" id="gridBlockSection">
                 <div class="grid-item">
-                  <div class="blog__inner-item">
+                  <div class="blog__inner-item block">
                     <a href="#!" class="article__img ">
                       <div class="article article__img-first">
                         <div class="scrolling__element-img">
@@ -94,7 +94,7 @@
                   </div>
                 </div>
                 <div class="grid-item">
-                  <div class="blog__inner-item">
+                  <div class="blog__inner-item block">
                     <a href="#!" class="article__img ">
                       <div class="article article__img-second">
                         <div class="scrolling__element-img">
@@ -106,7 +106,7 @@
                   </div>
                 </div>
                 <div class="grid-item">
-                  <div class="blog__inner-item">
+                  <div class="blog__inner-item block">
                     <a href="#!" class="article__img ">
                       <div class="article article__img-third">
                         <div class="scrolling__element-img">
@@ -118,7 +118,7 @@
                   </div>
                 </div>
                 <div class="grid-item">
-                  <div class="blog__inner-item">
+                  <div class="blog__inner-item block">
                     <a href="#!" class="article__img ">
                       <div class="article article__img-first">
                         <div class="scrolling__element-img">
@@ -130,7 +130,7 @@
                   </div>
                 </div>
                 <div class="grid-item">
-                  <div class="blog__inner-item">
+                  <div class="blog__inner-item block">
                     <a href="#!" class="article__img ">
                       <div class="article article__img-second">
                         <div class="scrolling__element-img">
@@ -142,7 +142,7 @@
                   </div>
                 </div>
                 <div class="grid-item">
-                  <div class="blog__inner-item">
+                  <div class="blog__inner-item block">
                     <a href="#!" class="article__img ">
                       <div class="article article__img-third">
                         <div class="scrolling__element-img">
@@ -154,7 +154,7 @@
                   </div>
                 </div>
                 <div class="grid-item">
-                  <div class="blog__inner-item">
+                  <div class="blog__inner-item block">
                     <a href="#!" class="article__img ">
                       <div class="article article__img-first">
                         <div class="scrolling__element-img">
@@ -166,7 +166,7 @@
                   </div>
                 </div>
                 <div class="grid-item">
-                  <div class="blog__inner-item">
+                  <div class="blog__inner-item block">
                     <a href="#!" class="article__img ">
                       <div class="article article__img-second">
                         <div class="scrolling__element-img">
@@ -178,7 +178,43 @@
                   </div>
                 </div>
                 <div class="grid-item">
-                  <div class="blog__inner-item">
+                  <div class="blog__inner-item block">
+                    <a href="#!" class="article__img ">
+                      <div class="article article__img-third">
+                        <div class="scrolling__element-img">
+                          <div class="button__color article__button">articles</div>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="article__text">Lorem ipsum dolor sit amet</div>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="blog__inner-item block" >
+                    <a href="#!" class="article__img ">
+                      <div class="article article__img-first">
+                        <div class="scrolling__element-img">
+                          <div class="button__color article__button">articles</div>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="article__text">Lorem ipsum dolor sit amet</div>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="blog__inner-item block">
+                    <a href="#!" class="article__img ">
+                      <div class="article article__img-second">
+                        <div class="scrolling__element-img">
+                          <div class="button__color article__button">articles</div>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="article__text">Lorem ipsum dolor sit amet</div>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="blog__inner-item block">
                     <a href="#!" class="article__img ">
                       <div class="article article__img-third">
                         <div class="scrolling__element-img">
@@ -191,7 +227,7 @@
                 </div>
               </div>
               <div class="article__link-btn">
-                <button class="article__link">View more articles +</button>
+                <button class="article__link" id="showMoreButtonOne">View more articles +</button>
               </div>
             </div>
           </div>
@@ -262,7 +298,35 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/main.js"> </script>
+<script>
+ const gridItems = document.querySelectorAll('.grid-item');
+  const showMoreButton = document.getElementById('showMoreButtonOne');
+  const gridBlockSection = document.getElementById('gridBlockSection');
+  const itemsToShowPerClick = 4;
+  let visibleGridItems = itemsToShowPerClick;
 
+  function showNextItems() {
+    for (let i = visibleGridItems - itemsToShowPerClick; i < visibleGridItems; i++) {
+      if (gridItems[i]) {
+        gridItems[i].style.display = 'block';
+      }
+    }
+    visibleGridItems += itemsToShowPerClick;
+
+    // Перевіряємо, чи є ще елементи для відображення
+    if (visibleGridItems >= gridItems.length) {
+      showMoreButton.style.display = 'none';
+    }
+  }
+
+  // Приховуємо всі елементи, крім перших чотирьох
+  for (let i = itemsToShowPerClick; i < gridItems.length; i++) {
+    gridItems[i].style.display = 'none';
+  }
+
+  // Додаємо обробник події для кнопки "Показати ще"
+  showMoreButton.addEventListener('click', showNextItems);
+</script>
 </body>
 
 </html>
